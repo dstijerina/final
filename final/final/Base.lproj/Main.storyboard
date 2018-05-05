@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="mok-gR-u5d">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="3ZC0z7N" translatesAutoresizingMaskIntoConstraints="NO" id="Apy-ue-Cfw">
+                                <rect key="frame" x="0.0" y="76" width="375" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IwT-UB-ocx">
+                                <rect key="frame" x="0.0" y="437" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Chapter 1"/>
+                                <connections>
+                                    <segue destination="CgE-fX-Etq" kind="show" id="8WP-DJ-7LA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NRK-It-Z4G">
+                                <rect key="frame" x="0.0" y="364" width="375" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Prologue"/>
+                                <connections>
+                                    <segue destination="LgV-BW-63K" kind="show" id="GfY-uF-LSr"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SH4-RE-Wlw">
+                                <rect key="frame" x="16" y="507" width="343" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="izD-oK-0D7"/>
+                    <connections>
+                        <outlet property="totalDP" destination="SH4-RE-Wlw" id="WdI-fh-oEL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1445.5999999999999" y="132.68365817091455"/>
+        </scene>
+        <!--Prologue View Controller-->
+        <scene sceneID="C4I-vg-9Ec">
+            <objects>
+                <viewController id="LgV-BW-63K" customClass="PrologueViewController" customModule="final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ngX-Jy-JSu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YS5-E9-fWt">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2BZ-oz-ifv">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Prologue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKV-uL-gxa">
+                                                <rect key="frame" x="153" y="36" width="74" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTO-3K-GMY">
+                                                <rect key="frame" x="0.0" y="293" width="375" height="162"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            </pickerView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M0C-oG-aXA">
+                                                <rect key="frame" x="5" y="73" width="365" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">        Welcome to the world of Trails from Zero! When you begin the prologue, you will watch multiple cutscenes introducing our protagonist Lloyd Bannings, the city of Crossbell, and the accompanying party members. </string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XcT-eO-aYU">
+                                                <rect key="frame" x="5" y="197" width="370" height="102"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">        Once you are brought to the entrance of the GeoFront, you will be told each party member's choice of weapon and gain control of the party. Choose your party leader:</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LSz-WT-XkO">
+                                                <rect key="frame" x="5" y="448" width="365" height="35"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8bI-eB-Wnw">
+                                                <rect key="frame" x="8" y="491" width="359" height="105"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="18" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HSy-Hx-fXl">
+                                                <rect key="frame" x="5" y="666" width="365" height="269"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Request #1
+Client: Crossbell Government
+Task  : Defeat Megalo Bat
+
+Now head back to Geofront A by Heading south from S.S.S area to the next
+screen and turn left. Proceed into the Dungeon until you meet the second
+Healing statue, Heal yourself then continue to boss area to fight Megalo bat.
+
+Reward: 1500 Mira, 5 DP</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Mark every completed request by pressing the switch." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p43-nL-LZR">
+                                                <rect key="frame" x="8" y="625" width="359" height="33"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="20" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cxo-ZC-oav">
+                                                <rect key="frame" x="5" y="974" width="365" height="437"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Request #2
+
+Client: Shion (Central hall)
+Task  : Check Residential area missing people
+
+Go to Residential Area by heading left by 2 screens from Central area. Enter the top right house and examine a door. Now go to the Eastern street enter the Fish building to see an event and talk with a man. Head inside Acacia Inn near the entrance to Waterfront area. Now go to the Old town area by heading south eastern from there, you'll fight some warriors and thugs. Head into Trinity Bar afterwards and choose option 2 when prompted. After, continue your quest by heading inside Lotus Heights and go to the 2nd floor top left room. Report to Shion to finish your quest.
+
+Reward: 1000 Mira, 3 DP</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TvB-Ph-E33">
+                                                <rect key="frame" x="279" y="1369" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectTwo:" destination="LgV-BW-63K" eventType="valueChanged" id="P8s-RT-O5h"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="mIf-6Y-pjp">
+                                                <rect key="frame" x="279" y="904" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectOne:" destination="LgV-BW-63K" eventType="valueChanged" id="rEc-sW-pYT"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="VW8-KZ-5gE"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="2BZ-oz-ifv" firstAttribute="leading" secondItem="YS5-E9-fWt" secondAttribute="leading" id="B8I-mG-XB5"/>
+                                    <constraint firstAttribute="bottom" secondItem="2BZ-oz-ifv" secondAttribute="bottom" id="IJY-LO-YlA"/>
+                                    <constraint firstAttribute="trailing" secondItem="2BZ-oz-ifv" secondAttribute="trailing" id="XWr-n9-1h5"/>
+                                    <constraint firstItem="2BZ-oz-ifv" firstAttribute="top" secondItem="YS5-E9-fWt" secondAttribute="top" id="cHf-CM-sLe"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YS5-E9-fWt" firstAttribute="bottom" secondItem="E4Q-9U-Udq" secondAttribute="bottom" id="5Gn-09-GT7"/>
+                            <constraint firstItem="YS5-E9-fWt" firstAttribute="top" secondItem="E4Q-9U-Udq" secondAttribute="top" id="RoQ-mm-Kwm"/>
+                            <constraint firstItem="YS5-E9-fWt" firstAttribute="trailing" secondItem="E4Q-9U-Udq" secondAttribute="trailing" id="Zfl-Dw-3Yi"/>
+                            <constraint firstItem="YS5-E9-fWt" firstAttribute="leading" secondItem="E4Q-9U-Udq" secondAttribute="leading" id="ihr-7E-nYu"/>
+                            <constraint firstItem="2BZ-oz-ifv" firstAttribute="width" secondItem="ngX-Jy-JSu" secondAttribute="width" id="zoV-lJ-YZi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="E4Q-9U-Udq"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1500"/>
+                    <connections>
+                        <outlet property="partyMember" destination="8bI-eB-Wnw" id="wgM-JV-oES"/>
+                        <outlet property="picker" destination="HTO-3K-GMY" id="8as-WJ-RyX"/>
+                        <outlet property="selectedLabel" destination="LSz-WT-XkO" id="9X2-Nz-kUH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ew-JK-yzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2105.5" y="133"/>
+        </scene>
+        <!--One View Controller-->
+        <scene sceneID="LYa-BM-BNN">
+            <objects>
+                <viewController id="CgE-fX-Etq" customClass="OneViewController" customModule="final" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="hAQ-TR-Vkp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ocy-8V-4WW">
+                                <rect key="frame" x="0.0" y="64" width="375" height="1436"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xhF-SC-Tmm">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Chapter 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gAx-4x-3LW">
+                                                <rect key="frame" x="148" y="39" width="79" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="12" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kao-oo-XHC">
+                                                <rect key="frame" x="8" y="85" width="359" height="216"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Request #3:
+
+Client: IBC receptionist (IBC building)
+Task : Have 30 Sepith for all attributes and exchange them at IBC for cash 
+Note : If you lack of sepiths go to Geofront A to farm some
+ Reward : 1000 Mira, 3 DP</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="24" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gjf-P9-bwx">
+                                                <rect key="frame" x="4" y="334" width="367" height="313"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <string key="text">Request #4:
+
+Client: Library Receptionist (Central area)
+Task : Collect 3 Books that haven't been returned by the borrowers
+
+- Talk to Raymond inside CSPD building to get the 1st book (near vending machine)
+- Talk to a man inside a room at Acacia Inn 1F (he is at the eastern room)
+- Talk to a girl inside Bellheim apartment at Western Street 
+- Finally give all the books to the receptionist
+
+Reward : 1000 Mira , 3 DP</string>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="26" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="imw-LL-odc">
+                                                <rect key="frame" x="4" y="681" width="363" height="412"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Request #5
+
+Client: Ryuu 
+Task: Find the cat's owner.
+Note: This quest doesn't appear on Terminal Computer at S.S.S talk to the client directly. 
+- Talk to Ryuu inside Bellheim apartment building.
+- Talk to the Butler at Southwestern house (Residential area)
+- Talk to a couple to hear about Sania at the house right next to the Butler's house.
+- Talk to the kid at 2F inside the Hayworth residence.
+- Head to Western street to see an event
+- Talk to Sania at northwestern area of Western street to finish the quest
+
+Reward: 500 Mira, 5 DP</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="14" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LrZ-CD-b1k">
+                                                <rect key="frame" x="4" y="1123" width="363" height="250"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <mutableString key="text">Request #6 
+Client: Lars (Chinese restaurant eastern street inn area)
+Task: Get a Mishy Dolls 
+Play some game inside Casino or buy 200 medals from the casino and trade 200
+medals for the Mishy doll[Accesories]. Give the Doll to Lars.
+
+Reward : 500 Mira, 5 DP</mutableString>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="SgL-8n-803">
+                                                <rect key="frame" x="277" y="270" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectThree:" destination="CgE-fX-Etq" eventType="valueChanged" id="J8V-sf-GCd"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="C1e-W2-ayV">
+                                                <rect key="frame" x="277" y="616" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectFour:" destination="CgE-fX-Etq" eventType="valueChanged" id="im3-Ob-avw"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="dmw-C5-3jL">
+                                                <rect key="frame" x="275" y="1062" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectFive:" destination="CgE-fX-Etq" eventType="valueChanged" id="hFA-tT-PaW"/>
+                                                </connections>
+                                            </switch>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="llg-zf-fh7">
+                                                <rect key="frame" x="277" y="1342" width="49" height="31"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <connections>
+                                                    <action selector="selectSix:" destination="CgE-fX-Etq" eventType="valueChanged" id="fOO-tu-AKM"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1500" id="tNF-VR-ATV"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="xhF-SC-Tmm" secondAttribute="bottom" id="27W-Hc-NFv"/>
+                                    <constraint firstAttribute="trailing" secondItem="xhF-SC-Tmm" secondAttribute="trailing" id="2TD-FE-ggF"/>
+                                    <constraint firstItem="xhF-SC-Tmm" firstAttribute="top" secondItem="ocy-8V-4WW" secondAttribute="top" id="Myt-wK-FQH"/>
+                                    <constraint firstItem="xhF-SC-Tmm" firstAttribute="leading" secondItem="ocy-8V-4WW" secondAttribute="leading" id="roh-ro-duI"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ocy-8V-4WW" firstAttribute="bottom" secondItem="6h4-4F-Rba" secondAttribute="bottom" id="KLX-W1-vwm"/>
+                            <constraint firstItem="ocy-8V-4WW" firstAttribute="trailing" secondItem="6h4-4F-Rba" secondAttribute="trailing" id="PRZ-q8-8fd"/>
+                            <constraint firstItem="ocy-8V-4WW" firstAttribute="leading" secondItem="6h4-4F-Rba" secondAttribute="leading" id="Uw0-2J-Ch8"/>
+                            <constraint firstItem="xhF-SC-Tmm" firstAttribute="width" secondItem="hAQ-TR-Vkp" secondAttribute="width" id="qbS-ie-pGU"/>
+                            <constraint firstItem="ocy-8V-4WW" firstAttribute="top" secondItem="6h4-4F-Rba" secondAttribute="top" id="rhC-hw-YeJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6h4-4F-Rba"/>
+                    </view>
+                    <size key="freeformSize" width="375" height="1500"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZXp-EP-gYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2765.5999999999999" y="132.23388305847078"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="wBe-jK-fj3">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mok-gR-u5d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="4I2-gl-uon">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="WJ1-Ux-M0H"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m7S-tf-K4R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="697" y="133"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="3ZC0z7N" width="960" height="575"/>
+    </resources>
+</document>
